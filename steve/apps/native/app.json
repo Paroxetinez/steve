@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "newArchEnabled": true,
+    "name": "NotesContract",
+    "slug": "NotesContract",
+    "scheme": "notescontract",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D87E1"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.klein.steve"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Steve to access your photos.",
+          "cameraPermission": "Allow Steve to access your camera."
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dfc97943-1383-4dec-b2b8-a2f591e36849"
+      }
+    }
+  }
+}

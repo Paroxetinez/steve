@@ -1,0 +1,24 @@
+{
+  "name": "steve",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "jest --runInBand",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "prettier": "3.7.4",
+    "turbo": "2.6.2"
+  },
+  "engines": {
+    "node": ">=20.19.4"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.22"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@packages/backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./convex/_generated/api.js",
+  "types": "./convex/_generated/api.d.ts",
+  "exports": {
+    ".": {
+      "types": "./convex/_generated/api.d.ts",
+      "default": "./convex/_generated/api.js"
+    }
+  },
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success",
+    "typecheck": "tsc --noEmit -p convex",
+    "bench:appearance-latency": "node scripts/benchmark-appearance-latency.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convex": "^1.29.3",
+    "openai": "^6.9.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

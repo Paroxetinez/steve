@@ -1,0 +1,20 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "paths": {
+      "@packages/backend/*": [
+        "../../packages/backend/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/__tests__",
+    "src/screens/_archive",
+    "src/screens/ChatScreen.tsx",
+    "src/screens/NotesDashboardScreen.tsx",
+    "src/screens/CreateNoteScreen.tsx"
+  ]
+}

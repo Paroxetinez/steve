@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.turbo/
+.tmp/
+.expo/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.tsbuildinfo
